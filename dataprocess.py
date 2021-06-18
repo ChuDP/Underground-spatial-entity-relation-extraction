@@ -16,14 +16,6 @@ import matplotlib.pyplot as plt
 from gensim.models import Word2Vec
 from gensim.models.word2vec import PathLineSentences
 
-################## 加载自定义词典######################
-jieba.load_userdict("关系提取实体库_去重_可扩展.txt")
-jieba.load_userdict("地质专业词汇词典.txt")
-jieba.load_userdict("常用词词典.txt")
-jieba.load_userdict("去重标注库.txt")
-jieba.load_userdict("关系提取实体库.txt")
-jieba.load_userdict("关系提取关系词库.txt")
-
 ###############读取识别结果数据################
 def load_data():
     all_w, all_label = [], []
