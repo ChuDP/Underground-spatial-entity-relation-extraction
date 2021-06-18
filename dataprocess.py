@@ -110,8 +110,6 @@ def equidistance_select(input):
 if __name__ == '__main__':
     # load_data()
     inputs = open('result/train_data_pre.txt', 'r', encoding='utf-8')
-    # outputs2 = open('result/train_data_pre_remain.txt', 'w', encoding='utf-8')
-    # inputs_fin =equidistance_select(inputs)
     outputs1 = open('result/train_data_pre_100_all.txt', 'w', encoding='utf-8')
 
     for line in inputs:
