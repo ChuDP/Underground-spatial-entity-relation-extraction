@@ -12,15 +12,6 @@ import itertools
 import numpy as np
 from dataprocess import trim, segment_sentence
 
-################## 加载自定义词典######################
-jieba.load_userdict("地质专业词汇词典.txt")
-jieba.load_userdict("常用词词典.txt")
-jieba.load_userdict("去重标注库.txt")
-jieba.load_userdict("关系提取实体库_quchong.txt")
-jieba.load_userdict("关系提取关系词库_quchong.txt")
-jieba.load_userdict("Relation_CX_flag.txt")
-jieba.load_userdict("关系提取实体库.txt")
-jieba.load_userdict("关系提取关系词库.txt")
 data={} #用来存放数据的字典
 ######################读取等距读取的100个句子，以整句的形式进行存储########################
 def data_load1(inputs):
@@ -246,22 +237,7 @@ def Relation_flag(file, outfile):
             start = int(entity1_pos[count - 1])
             a = sen.index(word, start)
             relationword_pos.append(a)
-            # relationword_pos.append(sen.index(relationword[count-1]))
-            # for index, nums in enumerate(sen):
-            #     num_count =0
-            #     if nums == relationword[count-1]:
-            #         num_count += 1
-            #         if num_count == 1:
-            #             position_index.append(index)
-            #         else:
-            #             continue
-            #
-            # for i in position_index:
-            #     a = int(entity1_pos[count - 1])
-            #     b = int(entity2_pos[count - 1])
-            #     if int(i) > a and int(i - b) < 9:  #######限制出现相同关系词时，保证关系词的位置在对应实体之后，最远距离实体2有5个词的距离
-            #         relationword_pos.append(i)
-
+    
     ##############判断存在关系词时，两个实体之间是否有介词或者连词，有用1标记，没有用0标记###############
     count_ = 0
     for sentence in sentences:
