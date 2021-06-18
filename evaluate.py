@@ -310,11 +310,6 @@ def evaluate_score(file):
                     relationwords_index.append(c)
             else:
                 relationwords_index.append(['unknown'])
-            # if a <= 0.4:
-            #     relationwords_index.append(['unknown'])
-            #     continue
-            # else:
-            #     relationwords_index.append(max_fun_index(i))
 
         count_num = -1
         for i in relationwords_index:
@@ -466,17 +461,17 @@ def evaluate_score(file):
             count_triple += 1
             i.append(sentences[count_triple])
 
-        # Triads_out = []
-        # for i in Triads:
-        #     if i[2] != 'unknown':
-        #         Triads_out.append(i)
-        #
-        # for i in range(len(Triads_out)):
-        #     for j in range(len(Triads_out[i])):
-        #         outfile.write(str(Triads_out[i][j]))
-        #         outfile.write(' ')
-        #     outfile.write('\n')
-        # outfile.close()
+#         Triads_out = []
+#         for i in Triads:
+#             if i[2] != 'unknown':
+#                 Triads_out.append(i)
+        
+#         for i in range(len(Triads_out)):
+#             for j in range(len(Triads_out[i])):
+#                 outfile.write(str(Triads_out[i][j]))
+#                 outfile.write(' ')
+#             outfile.write('\n')
+#         outfile.close()
 
 
         ##########计算准确率###########
