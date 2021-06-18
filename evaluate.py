@@ -47,8 +47,8 @@ def evaluate_score(file):
     data1 = data_load2(file)
     #########抽样#########
     batch = []
-    for i in range(10):
-        batch.append(np.random.choice(len(data1), 1000))
+    for i in range(1000):
+        batch.append(np.random.choice(len(data1), 10000))
     #
     # #########将抽样的数字还原成标注完成的句子#########
     batches = []
