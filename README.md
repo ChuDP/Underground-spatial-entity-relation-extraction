@@ -1,2 +1,2 @@
-# Open-geological-entity-relation-extraction
-An open geological entity relationship extraction method for Chinese geological texts
+# spatial-entity-relation-extraction
+A machine learning approach to extract spatial information from geological texts in Chinese
