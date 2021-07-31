@@ -595,5 +595,5 @@ def Bootstrapping(file):
 
 
 if __name__ == '__main__':
-    inputs = open('result/标注完成最终结果111.txt', 'r', encoding='utf-8')
+    inputs = open('Data/train_data_pre_100_label.txt', 'r', encoding='utf-8')
     Bootstrapping(inputs)
