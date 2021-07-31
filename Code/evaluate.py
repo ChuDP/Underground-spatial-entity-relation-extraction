@@ -2,7 +2,7 @@
 """
 通过前面提取的特征，计算标注好的句子中每个词的权值，进而选择出概率最高的那个值作为关键词
 """
-from Biaozhu import data_load2,trim,segment_sentence
+from label import data_load2,trim,segment_sentence
 import jieba.posseg as pseg
 import numpy as np
 
