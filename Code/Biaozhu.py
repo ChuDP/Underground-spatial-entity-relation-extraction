@@ -347,8 +347,8 @@ if __name__ == '__main__':
 
 
 ################手动标注关系词，然后用下面的代码进行关系词词性标注及位置标注##################
-    inputs = open('result/train_data_pre_100_entity.txt', 'r', encoding='utf-8')
-    outputs = open('result/train_data_pre_100_entity_relation.txt', 'w', encoding='utf-8')
+    inputs = open('Data/train_data_pre_100_label.txt', 'r', encoding='utf-8')
+    outputs = open('result/train_data_pre_100_label_fin.txt', 'w', encoding='utf-8')
     Relation_flag(inputs, outputs)
 
 #测试数据标注
@@ -360,6 +360,6 @@ if __name__ == '__main__':
     biaozhu_entity(entitycankaoku, inputs,outputs)
 
 ################手动标注关系词，然后用下面的代码进行关系词词性标注及位置标注##################
-    inputs = open('result/test_data_pre_100_entity.txt', 'r', encoding='utf-8')
-    outputs = open('result/test_data_pre_100_entity_relation.txt', 'w', encoding='utf-8')
+    inputs = open('Data/test_data_pre_100_label.txt', 'r', encoding='utf-8')
+    outputs = open('result/test_data_pre_100_label_fin.txt', 'w', encoding='utf-8')
     Relation_flag(inputs, outputs)
