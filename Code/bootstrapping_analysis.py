@@ -4,7 +4,7 @@
 本实验选择的特征包括（1)词性特征 （2）关系词所处的位置 （3）句法依存关系 （4）左边有连词或者介词时的位置 （5）到e1的距离 （6）到e2的距离 （7）关系词的长度 （8）e1到e2的距离
 """
 import numpy as np
-from Biaozhu import data_load2
+from label import data_load2
 import jieba.posseg as pseg
 from dataprocess import trim, segment_sentence
 import matplotlib
