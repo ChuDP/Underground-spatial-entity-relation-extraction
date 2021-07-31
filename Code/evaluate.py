@@ -519,11 +519,5 @@ def evaluate_score(file):
 
 
 if __name__ == '__main__':
-    inputs = open('result/train_data_pre_100_test_biaozhu_new_最终结果.txt', 'r', encoding='utf-8')
-
-    # inputs = open('没有识别的句子.txt', 'r', encoding='utf-8')
-    ####提取所有的三元组信息####
-    # inputs = open('result/实体对及位置提取结果_for_all-753.txt', 'r', encoding='utf-8')
-    # outputs = open('result/triples_of_all.txt', 'w', encoding='utf-8')
-    # outputs = open('result/triples_of_all_haverelation.txt', 'w', encoding='utf-8')
+    inputs = open('Data/test_data_pre_100_label_fin.txt', 'r', encoding='utf-8')
     evaluate_score(inputs)
